@@ -1,6 +1,6 @@
 
 
-
+-- options here
 vim.o.hlsearch = false
 
 -- Make line numbers default
