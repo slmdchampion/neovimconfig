@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@vscode/codicons": "^0.0.35"
+    "@vscode/codicons": "^0.0.35",
+    "neovim": "^4.10.1"
   }
 }
