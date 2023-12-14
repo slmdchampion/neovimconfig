@@ -84,6 +84,7 @@ return {
     --  define the property 'filetypes' to the map in question.
     local servers = {
       clangd = {},
+      sqlls = {},
       -- gopls = {},
       -- pyright = {},
       -- rust_analyzer = {},
