@@ -43,12 +43,20 @@ return {
 				{ name = "luasnip" }, -- snippets
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
+				{ name = "vim-dadbod-completion" },
 			}),
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
 				format = lspkind.cmp_format({
 					maxwidth = 50,
 					ellipsis_char = "...",
+					mode = "symbol_text",
+					-- with_text = true,
+					menu = {
+						vim_dadbod_completion = "[DB]",
+						path = "[path]",
+						buffer = "[Buffer]",
+					},
 				}),
 			},
 		})

@@ -84,7 +84,7 @@ return {
     --  define the property 'filetypes' to the map in question.
     local servers = {
       clangd = {},
-      sqlls = {},
+      sqlls = { filetypes = { 'sql', 'mysql' }},
       -- gopls = {},
       -- pyright = {},
       -- rust_analyzer = {},
