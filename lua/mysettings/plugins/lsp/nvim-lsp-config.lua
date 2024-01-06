@@ -6,13 +6,6 @@ return {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     "hrsh7th/cmp-nvim-lsp",
-    'hrsh7th/nvim-cmp',
-    'hrsh7th/cmp-path',
-    'saadparwaiz1/cmp_luasnip',
-    'hrsh7th/cmp-nvim-lua',
-    'L3MON4D3/LuaSnip',
-    'rafamadriz/friendly-snippets',
-    'folke/trouble.nvim',
     -- Useful status updates for LSP
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
     { 'j-hui/fidget.nvim', opts = {} },
@@ -92,7 +85,6 @@ return {
     local servers = {
       clangd = {},
       sqlls = { filetypes = { 'sql', 'mysql' }},
-      emmet_ls = {},
       -- gopls = {},
       -- pyright = {},
       -- rust_analyzer = {},
@@ -102,10 +94,7 @@ return {
           black = { enabled = true },
         },
       },
-      html = { filetypes = { 'html', 'twig', 'hbs' },
-        plugins = { prettier = { enabled = true },
-        }
-      },
+      html = { filetypes = { 'html', 'twig', 'hbs' } },
 
       lua_ls = {
         Lua = {
