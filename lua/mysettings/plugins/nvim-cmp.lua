@@ -8,6 +8,9 @@ return {
 		"saadparwaiz1/cmp_luasnip", -- for autocompletion
 		"rafamadriz/friendly-snippets", -- useful snippets
 		"onsails/lspkind.nvim", -- vs-code like pictograms
+		"f3fora/cmp-spell",
+		"hrsh7th/cmp-cmdline",
+		'hrsh7th/cmp-nvim-lua',
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -44,6 +47,7 @@ return {
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
 				{ name = "vim-dadbod-completion" },
+				{ name = "spell" },
 			}),
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {

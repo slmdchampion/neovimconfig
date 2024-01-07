@@ -1,0 +1,6 @@
+ ○ cmp-nvim-lua 
+    ○ nvim-treesitter-context 
+    ○ trouble.nvim 
+    ○ vim-prettier 
+
+
