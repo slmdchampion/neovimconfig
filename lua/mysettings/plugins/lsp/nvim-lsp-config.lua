@@ -12,6 +12,7 @@ return {
 
     -- Additional lua configuration, makes nvim stuff amazing!
     'folke/neodev.nvim',
+    {'ThePrimeagen/htmx-lsp', },
   },
   config = function ()
 
@@ -94,7 +95,10 @@ return {
           black = { enabled = true },
         },
       },
-      html = { filetypes = { 'html', 'twig', 'hbs' } },
+      htmx = { filetypes = { 'html', 'htmldjango' } },
+      html = {
+        filetypes = { 'html', 'twig', 'hbs' },
+      },
 
       lua_ls = {
         Lua = {

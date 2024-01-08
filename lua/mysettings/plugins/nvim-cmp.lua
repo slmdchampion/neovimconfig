@@ -48,6 +48,7 @@ return {
 				{ name = "path" }, -- file system paths
 				{ name = "vim-dadbod-completion" },
 				{ name = "spell" },
+				{ name = 'htmx' },
 			}),
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
