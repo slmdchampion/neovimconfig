@@ -13,6 +13,7 @@ return {
     -- Additional lua configuration, makes nvim stuff amazing!
     'folke/neodev.nvim',
     {'ThePrimeagen/htmx-lsp', },
+    'artempyanykh/marksman',
   },
   config = function ()
 
@@ -85,6 +86,7 @@ return {
     --  define the property 'filetypes' to the map in question.
     local servers = {
       clangd = {},
+      marksman = {},
       sqlls = { filetypes = { 'sql', 'mysql' }},
       -- gopls = {},
       -- pyright = {},
@@ -97,7 +99,7 @@ return {
       },
       htmx = { filetypes = { 'html', 'htmldjango' } },
       html = {
-        filetypes = { 'html', 'twig', 'hbs' },
+        filetypes = { 'html', 'twig', 'hbs', 'javascript', 'css' },
       },
 
       lua_ls = {

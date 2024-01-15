@@ -3,6 +3,7 @@ return {
     branch = '0.1.x',
     dependencies = {
         'nvim-lua/plenary.nvim',
+        'ElPiloto/telescope-vimwiki.nvim',
         -- Fuzzy Finder Algorithm which requires local dependencies to be built.
         -- Only load if `make` is available. Make sure you have the system
         -- requirements installed.
@@ -31,6 +32,7 @@ return {
         }
 
         require('telescope').load_extension("fzf")
+        require('telescope').load_extension('vimwiki')
 
         -- set keymaps
         local keymap = vim.keymap -- for conciseness

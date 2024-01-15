@@ -43,7 +43,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
+vim.g.joplin_token = 'cf7cdc75ebfba44e9ee23efde0889bff50ea1b866d4da20e6f175031ff33e89fc4d130aeb8e397c61331ae1c40f632e6e01f10469f94e25d81b21abfa06ce8e6'
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
