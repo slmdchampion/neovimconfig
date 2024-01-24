@@ -14,14 +14,6 @@ return {
 		    ext = '.md'
 		},
 	    }
-    end },{
-"iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-	ft = { "markdown" },
-	build = function() vim.fn["mkdp#util#install"]() end,
-    init_md = function ()
-    	vim.g.mkdp_browser = '/bin/firefox'
-	vim.g.mkdp_echo_preview_url = 1
-    end
-    },
+	vim.g.vimwiki_markdown_link_ext =  1
+    end },
 }

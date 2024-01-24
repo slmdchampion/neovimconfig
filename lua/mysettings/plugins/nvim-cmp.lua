@@ -49,6 +49,7 @@ return {
 				{ name = "vim-dadbod-completion" },
 				{ name = "spell" },
 				{ name = 'htmx' },
+				{ name = 'cmdline' },
 			}),
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
